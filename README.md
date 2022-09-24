@@ -7,3 +7,6 @@ Links dos projetos ⏬
     <li><a href="https://cursos-z7f7.vercel.app/" target="_blank">Site vendas de cursos</a></li>
     <li><a href="https://crudd.vercel.app/" target="_blank">CRUD</a></li>
 </ul>
+<div align="center">
+<p>Feito com ❤️ por <strong>Adriana Beatriz.</strong></p>
+</div>
