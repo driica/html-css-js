@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Frontbox</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+		integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+		crossorigin="anonymous" /> <!--reseta todas as propriedades -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header>
+		<div class="menu-bg">
+			<div class="menu">
+				<div class="menu__logo">
+					<a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+				</div>
+				<nav class="nav">
+					<ul class="nav__list">
+						<li><a href="#somos" class="nav__link">Quem Somos</a></li>
+						<li><a href="#cursos" class="nav__link">Nossos Cursos</a></li>
+						<li><a href="#planos" class="nav__link">Planos</a></li>
+						<li><a href="#vantagens" class="nav__link">Vantagens</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<h1 class="intro">Aprenda a programar, <br> um projeto por vez!</h1>
+	</header>
+
+	<hr>
+
+	<section class="somos" id="somos">
+		<h2 class="section__titulo">Quem Somos?</h2>
+		<div class="somos-c"> <!--flex-conteiner, tudo o que fica dentro, é um flex-item -->
+			<div class="somos-c__texto">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat tempore nostrum obcaecati. Hic ipsa dolorum corrupti pariatur, corporis earum, minus eos laborum dolore, suscipit reiciendis dolor omnis repellendus officiis.</p>
+				<br>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit culpa commodi, perferendis magnam molestias laudantium amet, facilis voluptas ab, deleniti a. Asperiores accusantium itaque tempore numquam est dolore debitis cumque!</p>
+			</div>
+
+			<div class="somos-c__img">
+				<img src="img/somos.png" alt="">
+			</div>
+		</div>
+	</section>
+	<hr>
+	<section class="cursos" id="cursos" data-aos="fade-right">
+		<h2 class="section__titulo">Nossos Cursos</h2>
+		<div class="cursos-c">
+			<div class="curso">
+				<img src="img/ai.png" alt="Inteligência Artificial" class="curso__img">
+				<h3 class="curso__titulo">Inteligência Artificial</h3>
+				<p class="curso__descricao">
+					Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit.
+					Aenean
+					sit amet nisi.</p>
+			</div>
+			<div class="curso">
+				<img src="img/front.png" alt="Frontend" class="curso__img">
+				<h3 class="curso__titulo">Frontend</h3>
+				<p class="curso__descricao">
+					Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit.
+					Aenean
+					sit amet nisi.
+				</p>
+			</div>
+			<div class="curso">
+				<img src="img/seguranca.png" alt="Segurança da Informação" class="curso__img">
+				<h3 class="curso__titulo">Segurança da Informação</h3>
+				<p class="curso__descricao">
+					Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit.
+					Aenean
+					sit amet nisi.
+				</p>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<section class="planos" id="planos" data-aos="fade-right">
+		<h2 class="section__titulo">Planos</h2>
+		<div class="planos-c">
+			<div class="plano">
+				<h2 class="plano__titulo">Básico</h2>
+				<span class="plano__preco"><sup>R$</sup>25</span>
+				<hr class="plano__divisor">
+				<ul class="plano-lista">
+					<li class="plano-lista__item">1 mês de acesso ilimitado</li>
+					<li class="plano-lista__item">Acesso a todos os cursos</li>	
+					<li class="plano-lista__item">Certificado de conclusão</li>
+				</ul>
+				<a href="#" class="plano__btn-comprar">Comprar</a>
+			</div>
+
+			<div class="plano">
+				<h2 class="plano__titulo">Premium</h2>
+				<span class="plano__preco"><sup>R$</sup>40</span>
+				<hr class="plano__divisor">
+				<ul class="plano-lista">
+					<li class="plano-lista__item">1 mês de acesso ilimitado</li>
+					<li class="plano-lista__item">Acesso a todos os cursos</li>
+					<li class="plano-lista__item">Certificado de conclusão</li>
+					<li class="plano-lista__item">Suporte</li>
+				</ul>
+				<a href="#" class="plano__btn-comprar">Comprar</a>
+			</div>
+			
+			<div class="plano">
+				<h2 class="plano__titulo">Ultra</h2>
+				<span class="plano__preco"><sup>R$</sup>25</span>
+				<hr class="plano__divisor">
+				<ul class="plano-lista">
+					<li class="plano-lista__item">1 mês de acesso ilimitado</li>
+					<li class="plano-lista__item">Acesso a todos os cursos</li>
+					<li class="plano-lista__item">Certificado de conclusão</li>
+					<li class="plano-lista__item">Suporte</li>
+					<li class="plano-lista__item">Download das aulas</li>
+				</ul>
+				<a href="#" class="plano__btn-comprar">Comprar</a>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<section class="vantagens" id="vantagens" data-aos="fade-right">
+		<div class="vantagens-c">
+			<div class="vantagem">
+				<h2 class="vantagem__titulo">Foco em projeto</h2>
+				<p class="vantagem__descricao">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl
+					ut ante blandit hendrerit. Aenean sit
+					amet nisi.</p>
+			</div>
+			
+			<div class="vantagem">
+				<h2 class="vantagem__titulo">Portfólio incrível</h2>
+				<p class="vantagem__descricao">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl
+					ut
+					ante blandit hendrerit. Aenean sit
+					amet nisi.</p>
+			</div>
+			
+			<div class="vantagem">
+				<h2 class="vantagem__titulo">Aprenda fazendo</h2>
+				<p class="vantagem__descricao">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl
+					ut
+					ante blandit hendrerit. Aenean sit
+					amet nisi.</p>
+			</div>
+			
+			<div class="vantagem">
+				<h2 class="vantagem__titulo">Para todas as idades</h2>
+				<p class="vantagem__descricao">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl
+					ut
+					ante blandit hendrerit. Aenean sit
+					amet nisi.</p>
+			</div>
+			
+			<div class="vantagem">
+				<h2 class="vantagem__titulo">Atualizado</h2>
+				<p class="vantagem__descricao">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl
+					ut
+					ante blandit hendrerit. Aenean sit
+					amet nisi.</p>
+			</div>
+			
+			<div class="vantagem">
+				<h2 class="vantagem__titulo">Comece hoje</h2>
+				<p class="vantagem__descricao">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl
+					ut
+					ante blandit hendrerit. Aenean sit
+					amet nisi.</p>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<section class="newsletter">
+		<div class="newsletter-c">
+			<div class="newsletter-info">
+				<h2 class="newsletter-info__titulo">Newsletter</h2>
+				<p class="newsletter-info__descricao">Assine e fique por dentro <br> das novidades</p>
+			</div>
+			<form action="" class="newsletter-form">
+				<input type="text" placeholder="Seu e-mail" class="newsletter-form__input"> <!--placeholder é o que está escrito na caixa -->
+				<button type="submit" class="newsletter-form__submit">Assinar</button>
+			</form>
+		</div>
+	</section>
+	<footer class="footer">
+		<p class="footer__copyright">Este é um projeto feito por Adriana Beatriz<br>Rua XX, 0, XX - PE</p>
+		<a href="index.html">
+			<img src="img/logo.png" alt="" class="footer__logo">
+		</a>
+	</footer>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+    	AOS.init({duration: 1000});
+  	</script>
+</body>
+</html>

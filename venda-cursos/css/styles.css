@@ -1,0 +1,398 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box; /*quando defino 300px de largura, e 10px de padding, meu conteúdo continua com 300px. Sem o border-box, o conteúdo ficaria com 310px*/
+}
+
+/**********************************/
+/* 0. Variáveis
+/* 1. Container
+/* 2. Menu
+/* 3. Header
+/* 4. Quem somos
+/* 5. Nossos cursos
+/* 6. Planos
+/* 7. Vantagens
+/* 8. Newsletter
+/* 9. Footer
+/**********************************/
+
+/**********************************/
+/* 0. Variáveis
+/**********************************/
+:root{
+	--ff-primary: "Nunito", Helvetica, Arial, sans-serif;
+
+	--clr-green-dark: #049a40;
+	--clr-green-light: #08f96a;
+	--clr-pink-dark: #e600ff;
+	--clr-pink-light: #f3a0fd;
+	--clr-white: #F5F5F5;
+}
+/**********************************/
+/* 1. Estilos gerais
+/**********************************/
+html{
+	scroll-behavior: smooth; /*ao clicar em um link, esse é direcionado para seção suavemente*/
+}
+
+body{
+	background-color: var(--clr-white);
+	font-family: var(--ff-primary);
+}
+
+a,
+a:hover,
+a:active,
+a:link,
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+hr{
+	border: none;
+	background-color: var(--clr-pink-dark);
+	height: 2px;
+	width: 140px;
+	margin: 20px auto;
+}
+p{
+	line-height: 21.82px; /*espaçamento entre linhas*/
+	padding: 0 10px;
+}
+
+.section__titulo{
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 10px;
+}
+
+img{ /*imagem responsiva*/
+	display: block;
+	max-width: 100%;
+}
+/**********************************/
+/* 2. Menu
+/**********************************/
+
+.menu-bg{
+	background-color: var(--clr-green-light);
+}
+
+.menu{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 960px;
+	margin: 0 auto; /*se eu tiver em uma tela de 1000px, sobra 40px, pra isso não ocorrer, eu uso 0 auto, e ele pega os 40px, divide por 2 e fica bonitinho*/
+	flex-wrap: wrap; /*quebra do menu*/
+	padding-bottom: 5px;
+}
+
+.menu__logo{
+	margin: 10px;
+}
+
+.nav__list{
+	display: flex;
+	flex-wrap: wrap; /*quebra do menu em várias linhas*/
+}
+
+.nav__link{
+	padding: 20px 10px; /*20px superior, inferior; 10px a direita e esquerda*/
+}
+
+/**********************************/
+/* 3. Header
+/**********************************/
+.intro{
+	font-weight: bold;
+	font-size: 3em;
+	text-align: center;
+	margin: 0 auto;
+	padding: 25px 0px;
+}
+/**********************************/
+/* 4. Quem somos
+/**********************************/
+.somos{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.somos-c{
+	display: flex;
+	flex-wrap: wrap; 
+	align-items: center;
+}
+
+.somos-c__texto{
+	flex-grow: 6; /*vai ocupar um espaço 6x maior, ou ocupa um espaço de 6 colunas*/
+	flex-shrink: 1; /*permite que o item reduza o tamanho para caber no container*/
+	flex-basis: 160px; /*tamanho inicial é 160px*/ 
+}
+.somos-c__img{
+	flex-grow: 1; 
+	flex-shrink: 1;
+	flex-basis: 360px;
+}
+/**********************************/
+/* 5. Nossos cursos
+/**********************************/
+.cursos{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.cursos-c{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.curso{
+	width: 280px; /*para ficar lado a lado*/
+	margin: 0px 20px;
+}
+.curso__titulo{
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 10px 0px 5px 0px;
+}
+/**********************************/
+/* 6. Planos
+/**********************************/
+.planos{
+	background-color: var(--clr-pink-light);
+	
+}
+
+.planos-c{
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-end; /*do menor pro maior*/
+}
+
+.plano{
+	width: 290px;
+	margin: 10px;
+	border: 2px solid var(--clr-green-dark); 
+}
+
+.plano__titulo{
+	font-size: 3rem;
+	text-align: center;
+	margin: 10px auto;
+	font-weight: bold;
+
+}
+
+.plano__preco{
+	font-size: 3rem;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+}
+
+.plano__preco sup{
+	position: relative; /*para mudar a posição*/
+	font-size: 1.5rem;
+	top: -20px;
+}
+
+.plano__divisor{
+	background-color: var(--clr-green-dark);
+	width: 20px;
+	margin: 5px auto;
+}
+
+.plano-lista{
+	max-width: 195px;
+	margin: 0 auto;
+}
+
+.plano-lista__item{
+	margin: 10px 0;
+	font-style: italic;
+	display: flex; /*para posicionar bolinha*/
+	align-items: center;
+}
+
+.plano-lista__item::before{
+	content: "";
+	display: block;
+	width: 5px;
+	height: 5px;
+	background-color: var(--clr-green-dark);
+	border-radius: 5px;
+	margin-right: 5px;
+}
+
+.plano__btn-comprar{
+	display: block;
+	max-width: 180px;
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 15px auto;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase; /*texto em maiusculo*/
+	border: 2px solid var(--clr-green-dark)
+}
+
+.plano:last-child{ /*to selecionando o ultimo filho de plano*/
+	background-color: var(--clr-green-light);
+}
+
+.plano:last-child, .plano:last-child .plano__btn-comprar{
+	border: 2px solid var(--clr-pink-dark);
+}
+
+.plano:last-child .plano-lista__item::before, .plano:last-child .plano__divisor{
+	background-color: var(--clr-pink-dark);
+}
+
+@media(max-width: 800px){ /*a ordem padrão era 0 - básico; 1 - premium; 2 - ultra, mas eu modifiquei abaixo em telas menores de 800px*/
+	.plano:nth-child(3){
+		order: -2; 
+	} /*o terceiro filho de plano tem a ordem -2**/
+	.plano:nth-child(2){
+		order: -1;
+	} /*o segundo filho de plano tem a ordem -1**/
+}
+
+/**********************************/
+/* 7. Vantagens
+/**********************************/
+.vantagens-c{
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.vantagem{
+	max-width: 240px;
+	margin: 10px;
+}
+
+.vantagem__titulo{
+	font-size: 1.7rem;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+
+.vantagem__titulo::before{
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 25px;
+	margin-right: 5px;
+}
+
+.vantagem:nth-of-type(3n+1) .vantagem__titulo::before{ /*de inicio, n vale 0, fazendo o calculo, ele vai pegar o primeiro elemento, depois, n vale 1, e 3*1+1=4, e ele pega o quarto elemento*/
+	background-color: var(--clr-green-light);
+}
+.vantagem:nth-of-type(3n+2) .vantagem__titulo::before{
+	background-color: var(--clr-pink-dark);
+}
+.vantagem:nth-of-type(3n+3) .vantagem__titulo::before{
+	background-color: var(--clr-green-dark);
+}
+
+@media(max-width: 800px){
+	.vantagem{
+		max-width: 220px; /*para ter duas colunas em tela menores de 800px*/
+	}
+}
+
+/**********************************/
+/* 8. Newsletter
+/**********************************/
+.newsletter{
+	background-color: var(--clr-green-dark);
+	padding: 50px;
+}
+.newsletter-c{
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.newsletter-info{
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 260px;
+	padding-left: 10px;
+}
+.newsletter-info__titulo{
+	font-size: 2.62rem;
+	font-weight: bold;
+}
+.newsletter-info__descricao{
+	font-style: italic;
+}
+.newsletter-form{
+	flex-grow: 2;
+	flex-shrink: 1;
+	flex-basis: 260px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.newsletter-form__input{
+	flex-grow: 3; /*input tenha 3x o tamanho do botão*/
+	flex-shrink: 1;
+	flex-basis: 260px;
+	font-size: 1.25rem;
+	width: 325px;
+	color: black;
+	font-style: italic;
+	font-family: var(--ff-primary);
+	border: 10px solid var(--clr-pink-dark);
+	padding: 10px;
+	margin: 0;
+	border-radius: 0px;
+}
+
+.newsletter-form__submit{
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 260px;
+	width: 192px;
+	font-family: var(--ff-primary);
+	font-size: 2.25rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: var(--clr-pink-dark);
+	color: black;
+	cursor: pointer; /*mudei o cursor ao passar em cima do botão*/
+	border: none;
+	padding: 15px;
+}
+
+/**********************************/
+/* 9. Footer
+/**********************************/
+.footer{
+	background-color: var(--clr-pink-light);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 55px calc((100% - 960px)/2);
+}
+
+.footer__copyright, .footer__logo{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+@media(max-width: 375px){
+	.newsletter-form__input{
+		width: 220px;
+	}
+	
+}

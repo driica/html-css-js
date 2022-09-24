@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600;700&display=swap');
+
+:root{
+    --titulo-principal: 'Bodoni Moda', serif;
+    --subtitulo: 
+}
+
+body{
+    background-image: linear-gradient();
+}
