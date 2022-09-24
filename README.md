@@ -8,6 +8,4 @@ Links dos projetos ⏬
     <li><a href="https://papelaria-site.vercel.app/" target="_blank">Papelaria</a></li>
     <li><a href="https://crudd.vercel.app/" target="_blank">CRUD</a></li>
 </ul>
-<div align="center">
-<p>Feito com ❤️ por <strong>Adriana Beatriz.</strong></p>
-</div>
+
